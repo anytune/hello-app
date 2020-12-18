@@ -1,0 +1,29 @@
+<template name='tpl'>
+    <view class="page">
+        <text>这里是SFC页面</text>
+        <button @click="btnAction">按钮</button>
+    </view>
+</template>
+<script>
+export default {
+    name: "tpl",
+    apiready() {
+        //like created
+    },
+    data() {
+        return {};
+    },
+    methods: {
+        btnAction() {
+            api.toast({
+                msg: "使用类似Vue的模式书写组件和绑定事件"
+            });
+        }
+    }
+};
+</script>
+<style>
+.page {
+    height: 100%;
+}
+</style>

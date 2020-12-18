@@ -1,0 +1,64 @@
+<template name='tpl'>
+  <view class="page">
+    <text>{{ text }}</text>
+
+    <button @click="goto">打开新页面</button>
+
+    <counter :num="num" @MyEvent1="MyEvent1" onMyEvent2="MyEvent2"/>
+  </view>
+</template>
+<script>
+import '../../components/counter.js'
+
+export default {
+  name: "tpl",
+  data() {
+    return {
+      text: "Hello AVM",
+      num: 10086
+    }
+  },
+  methods: {
+    MyEvent1(e) {
+      api.toast({
+        msg: JSON.stringify(e)
+      })
+    },
+    MyEvent2(e) {
+      api.toast({
+        msg: JSON.stringify(e)
+      })
+    },
+    goto() {
+      // 打开只有navigationBar的页面：
+      api.openTabLayout({
+        name: 'SFC',
+        url: '../sfc/sfc',
+        title: 'SFC新页面',
+        hideNavigationBar: false,
+        navigationBar: {
+          background: '#5082c2',
+          color: '#fff'
+        }
+      });
+    }
+  }
+};
+</script>
+<style>
+.page {
+  height: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.text:active {
+  opacity: 0.7;
+}
+</style>
