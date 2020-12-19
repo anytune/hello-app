@@ -26,7 +26,7 @@
 
 创建项目完成以后，会自动检出代码。此时弹出一个文件保存位置对话框，选择你想要存放代码位置的文件夹。检出完成后将会在编辑器中打开项目，代码结构如下：
 
-~~~
+~~~html
 ┌─css/                  css样式目录
 ├─feature/*             平台相关文件目录
 ├─html/*                原来的html页面目录
@@ -45,7 +45,7 @@
 
 ### 3.2 设置项目
 为了便于上手，先去除上边有 ` * ` 标记的多余目录文件，保留如下结构：
-~~~
+~~~html
 ┌─css/                  css样式目录
 ├─image/                图片目录
 ├─pages/                新版的AVM页面目录
@@ -128,7 +128,7 @@
 
 设置完成后，日志窗口将会输出如下日志，小程序开发工具启动，并开始预览。
 
-```
+```html
 正在打开微信开发者工具
 - initialize
 
@@ -174,12 +174,12 @@ AVM（APICloud-View-Model）前端组件化开发模式基于标准 ` Web Compon
 
 在第4行增加以下代码：
 
-```
+```html
     <button onclick={this.btnAction}>默认按钮</button>
 ```
 然后在大约19行的 methods 中添加点击事件的实现。
 
-```
+```js
     btnAction(e) {
         api.alert({ 
             msg: "Hello Click"
@@ -202,7 +202,7 @@ AVM（APICloud-View-Model）前端组件化开发模式基于标准 ` Web Compon
 
 然后在新建的页面可以组织一些代码：可以尝试类似 ` Vue ` 使用 ` @ ` 符号来绑定一些事件。
 
-```
+```html
 <template name='tpl'>
     <view class="page">
         <text>这里是SFC页面</text>
@@ -257,7 +257,7 @@ export default {
 
 组件代码如下：
 
-```
+```js
 avm.define('counter', class extends Component {
 
     render(props) {
@@ -284,7 +284,7 @@ avm.define('counter', class extends Component {
 
 调用组件的父级页面使用组件：
 
-```
+```html
 <template name='tpl'>
     <view class="page">
         <counter :num="num" @MyEvent1="MyEvent1" onMyEvent2="MyEvent2"/>
