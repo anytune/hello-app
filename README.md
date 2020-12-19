@@ -1,6 +1,11 @@
 #  APICloud多端开发快速上手教程
 
+## 0 代码仓库
+> 如果github图文异常请使用gitee镜像仓库
 
+- [github] https://github.com/apicloudcom/hello-app
+
+- [gitee镜像] https://gitee.com/YangYongAn/hello-app  
 ## 1 多端技术简介
 ` APICloud ` 多端技术提供一套代码同时开发原生 ` Android `  &  ` iOS ` 平台的  ` APP  ` 以及小程序的能力。多端技术基于 ` avm.js ` 语法进行代码编写，通过 ` APICloud Studio3 ` 或云编译生成  ` APP  ` 以及小程序代码。
 
