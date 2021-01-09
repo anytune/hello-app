@@ -14,7 +14,7 @@
 
 在进行开发之前，需要下载安装 ` APICloud Studio3 ` 工具（下文简称 ` Studio 3  ` ）。 ` Studio 3  `基于  ` VSCODE `  深度定制，通过 ` Studio 3 ` 新建和编写页面并编译预览调试。
 
-[点击进入工具下载页面](https://www.apicloud.com/studio3#downloadBtn/)。选择当前系统所对应的版本进行下载安装。更多的详细操作说明可以参[考APICloud Studio 3使用说明](https://docs.apicloud.com/apicloud3/#/overview/devtools?index=0&subIndex=3)。
+[点击进入工具下载页面](https://www.apicloud.com/studio3#downloadBtn/?uzchannel=30)。选择当前系统所对应的版本进行下载安装。更多的详细操作说明可以参[考APICloud Studio 3使用说明](https://docs.apicloud.com/apicloud3/#/overview/devtools?index=0&subIndex=3&uzchannel=30)。
 
 ## 3 如何创建第一个应用 HelloApp
 ### 3.1 创建项目
@@ -59,12 +59,12 @@
 ├─script/               JavaScript脚本目录
 └─config.xml            应用配置文件
 ~~~
-> ` config.xml ` 是应用配置文件，其中定义了应用的基本信息，完整说明请参考：[《config.xml应用配置说明》](https://docs.apicloud.com/Dev-Guide/app-config-manual)。
+> ` config.xml ` 是应用配置文件，其中定义了应用的基本信息，完整说明请参考：[《config.xml应用配置说明》](https://docs.apicloud.com/Dev-Guide/app-config-manual?uzchannel=30)。
 
 打开这个文件，做如下两步修改：
 1. **修改入口文件**。搜索找到（大概17行左右）  ` <content src="index.html" /> ` 修改为  **` <content src="pages/demo/demo" /> `** ,表示入口文件是 ` pages ` 目录下的 `demo` 页面。
 
-2. **配置使用原生渲染引擎**。将配置项代码  **` <preference name="avm" value="true"/> `** 增加到配置文件中，和已有的 ` preference ` 保持同一级别，例如插入到22行，如图。此配置项是为了声明将开启 ` AVM ` 原生渲染引擎。相关说明[参考这里](https://docs.apicloud.com/Dev-Guide/app-config-manual#14-19)。
+2. **配置使用原生渲染引擎**。将配置项代码  **` <preference name="avm" value="true"/> `** 增加到配置文件中，和已有的 ` preference ` 保持同一级别，例如插入到22行，如图。此配置项是为了声明将开启 ` AVM ` 原生渲染引擎。相关说明[参考这里](https://docs.apicloud.com/Dev-Guide/app-config-manual?uzchannel=30#14-19)。
 
 ![image.png](./image/@readme/jpYGq6RXkdLvxnh.png)
 ### 3.3 提交代码
@@ -166,16 +166,16 @@
 ##  <span id=s6> 6 AVM 上手</span>
 AVM（APICloud-View-Model）前端组件化开发模式基于标准 ` Web Components ` 组件化思想，提供包含虚拟 ` DOM ` 和 ` Runtime ` 的编程框架 ` avm.js ` 以及多端统一编译工具， 同时兼容 ` Vue ` 和 ` React ` 语法糖编写代码，编译工具将 ` Vue ` 和 ` React ` 相关语法糖编译转换为 ` avm.js ` 代码。
 
-与此同时， ` AVM ` 还兼容APICloud平台现有的所有 [模块](http://www.apicloud.com/modulestore)  和 [API](https://docs.apicloud.com/Client-API/api) 。
+与此同时， ` AVM ` 还兼容APICloud平台现有的所有 [模块](http://www.apicloud.com/modulestore?uzchannel=30)  和 [API](https://docs.apicloud.com/Client-API/api?uzchannel=30) 。
 
 ### 6.1 基础组件
 > 类似微信小程序一样，基础组件是组件化开发的基石。是一个页面元素和组件的抽象化表达。引擎内置了多个基础组件。
 
 在前面的 ` HelloAPP ` 项目中，我们已经看到了一个文案渲染。其实这就是一个  [ ` Text `  ](https://docs.apicloud.com/apicloud3/#/component/text?index=4&subIndex=1) 文本组件为我们渲染出来的。一个简单的 [ ` Text `  ](https://docs.apicloud.com/apicloud3/#/component/text?index=4&subIndex=1) 组件，在不同的目标系统上会被翻译为对应的平台资源，并且使用原生渲染和响应。在最外层还能看到一个 [ ` View ` ](https://docs.apicloud.com/apicloud3/#/component/view?index=4&subIndex=0) 组件，它就相当于一个组件的容器。可以在其中进行放置和嵌套各种组件，进行页面逻辑组织和编写。
 
-此时我们在页面中再尝试使用另一个基础组件：[ ` Button ` ](https://docs.apicloud.com/apicloud3/#/component/button?index=4&subIndex=4)。
+此时我们在页面中再尝试使用另一个基础组件：[ ` Button ` ](https://docs.apicloud.com/apicloud3/#/component/button?index=4&subIndex=4&uzchannel=30)。
 
-依然是在 ` demo ` 页面中，按照[ ` Button ` ](https://docs.apicloud.com/apicloud3/#/component/button?index=4&subIndex=4)文档示例代码添加一个[ ` Button ` ](https://docs.apicloud.com/apicloud3/#/component/button?index=4&subIndex=4)组件。
+依然是在 ` demo ` 页面中，按照[ ` Button ` ](https://docs.apicloud.com/apicloud3/#/component/button?index=4&subIndex=4&uzchannel=30)文档示例代码添加一个[ ` Button ` ](https://docs.apicloud.com/apicloud3/#/component/button?index=4&subIndex=4&uzchannel=30)组件。
 
 在第4行增加以下代码：
 
@@ -242,11 +242,11 @@ export default {
 
 
 ### 6.3 端API对象的能力
-> [端API对象](https://docs.apicloud.com/Client-API/api) 提供了构建应用程序所需要的一些基本的方法（` Method `） ，如窗口操作、相册和网络数据访问等；以及一些常见的属性 ` Attribute ` ，如屏幕宽度（ ` screenWidth ` ），系统类型（ ` systemType ` ）等；还有一些常用事件（ ` Event ` ），如电量低（ ` batterylow ` ）事件、应用进入后台（ ` pause ` ）事件。
+> [端API对象](https://docs.apicloud.com/Client-API/api?uzchannel=30) 提供了构建应用程序所需要的一些基本的方法（` Method `） ，如窗口操作、相册和网络数据访问等；以及一些常见的属性 ` Attribute ` ，如屏幕宽度（ ` screenWidth ` ），系统类型（ ` systemType ` ）等；还有一些常用事件（ ` Event ` ），如电量低（ ` batterylow ` ）事件、应用进入后台（ ` pause ` ）事件。
 
 刚刚在介绍页面组织方式的时候，创建了一个新页面。页面间跳转是APP应用程序的基础操作。下面将演示使用端API能力打开新窗口。
 
-将编辑焦点切回到入口文件  ` demo.stml ` 中。 在页面中添加一个按钮用于跳转页面，按钮点击后调用一个函数，其中使用  [` api.openTabLayout `](https://docs.apicloud.com/Client-API/api#openTabLayout)  来打开一个新页面。
+将编辑焦点切回到入口文件  ` demo.stml ` 中。 在页面中添加一个按钮用于跳转页面，按钮点击后调用一个函数，其中使用  [` api.openTabLayout `](https://docs.apicloud.com/Client-API/api?uzchannel=30#openTabLayout)  来打开一个新页面。
 
 ![image.png](./image/@readme/okBvSLjfOU7WADX.png)
 
@@ -321,7 +321,7 @@ export default {
 ![image.png](./image/@readme/S3pJVW2bZDPdMXx.png)
 
 
-上面的代码展示了如何定义组件，更多的组件传值和绑定事件，作用域等操作请[参考文档](https://docs.apicloud.com/apicloud3/#/components-guide/index?index=5&subIndex=0)。
+上面的代码展示了如何定义组件，更多的组件传值和绑定事件，作用域等操作请[参考文档](https://docs.apicloud.com/apicloud3/?uzchannel=30#/components-guide/index?index=5&subIndex=0)。
 
 通过一些基础组件和业务逻辑的组合可以开发出更多利于维护、逻辑统一的业务组件，提升开发效率。
 
