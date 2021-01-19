@@ -27,64 +27,32 @@
 
 填写好信息后，选择一个上手模板。例如在本文中选择了空白模板，再点击完成按钮，将开始创建项目。
 
-![image.png](./image/@readme/js8G2t5PcFEMyZa.png)
+![image.png](./image/@readme/ByCTUzr6mk8YfAi.png)
 
-创建项目完成以后，会自动检出代码。此时弹出一个文件保存位置对话框，选择你想要存放代码位置的文件夹。检出完成后将会在编辑器中打开项目，代码结构如下：
+创建项目完成以后，会自动检出代码。此时弹出一个文件保存位置对话框，选择你想要存放代码位置的文件夹。
+检出完成后将会在编辑器中打开项目，代码结构如下：
 
 ~~~html
-┌─css/                  css样式目录
-├─feature/*             平台相关文件目录
-├─html/*                原来的html页面目录
-├─icon/*                图标目录
+┌─css/                  css 样式目录
 ├─image/                图片目录
-├─launch/*              启动图目录
-├─pages/                新版的AVM页面目录
-│  ├─demo/
-│  │  └─demo.stml       demo页面代码
-├─res/*                 资源和加密相关配置目录
-├─script/               JavaScript脚本目录
-├─wgt/*                 包相关资源目录
-├─config.xml            应用配置文件
-└─index.html*           旧版html的启动页面
-~~~
-
-### 3.2 设置项目
-为了便于上手，先去除上边有 ` * ` 标记的多余目录文件，保留如下结构：
-~~~html
-┌─css/                  css样式目录
-├─image/                图片目录
-├─pages/                新版的AVM页面目录
-│  ├─demo
-│  │  └─demo.stml       demo页面代码
-├─script/               JavaScript脚本目录
+├─pages/                新版的 AVM 页面目录
+│  ├─main
+│  │  └─main.stml       main 页面代码
+├─script/               JavaScript 脚本目录
 └─config.xml            应用配置文件
 ~~~
 > ` config.xml ` 是应用配置文件，其中定义了应用的基本信息，完整说明请参考：[《config.xml应用配置说明》](https://docs.apicloud.com/Dev-Guide/app-config-manual?uzchannel=30)。
 
-打开这个文件，做如下两步修改：
-1. **修改入口文件**。搜索找到（大概17行左右）  ` <content src="index.html" /> ` 修改为  **` <content src="pages/demo/demo" /> `** ,表示入口文件是 ` pages ` 目录下的 `demo` 页面。
 
-2. **配置使用原生渲染引擎**。将配置项代码  **` <preference name="avm" value="true"/> `** 增加到配置文件中，和已有的 ` preference ` 保持同一级别，例如插入到22行，如图。此配置项是为了声明将开启 ` AVM ` 原生渲染引擎。相关说明[参考这里](https://docs.apicloud.com/Dev-Guide/app-config-manual?uzchannel=30#14-19)。
-
-![image.png](./image/@readme/jpYGq6RXkdLvxnh.png)
-### 3.3 提交代码
-> 做完项目修剪调整以后，提交代码。（目前安卓编译loader的时候需要依赖于上述第二步的修改，为了不出现意外情况，推荐做一次代码提交。）
-
-提交代码前需要确认是否保存。然后右键点击项目根目录，选择“提交到云端”。
-
-![image.png](./image/@readme/cpW21XJOq9Vu8rD.png)
-
-将会出现修改文件列表和输入提交注释的界面。输入注释（也可以使用自己喜欢的代码管理工具进行提交）
-
-![image.png](./image/@readme/BXKMT4aJkuI9Zi2.png)
 
 ## 4 调试和预览
 ### 4.1 实时预览
 
-现在开始关注到页面代码，打开 ` page/demo/demo.stml ` 文件，找到   ` data `  中的 ` text ` 字段，对其进行修改为自己期望的文案。保存后鼠标右键空白区域，选择“实时预览”。可以在右侧看的刚刚的修改效果。
+现在开始关注到页面代码，打开 ` page/main/main.stml ` 文件，找到   ` data `  中的 ` text ` 字段，对其进行修改为自己期望的文案。
+保存后鼠标右键空白区域，选择“实时预览”。可以在右侧看的刚刚的修改效果。
 
 
-![image.png](./image/@readme/zprkPm1C9IGM6ev.png)
+![image.png](./image/@readme/e5mODpU7AHyd24j.png)
 
 ### 4.2 真机预览
 
@@ -153,6 +121,16 @@
 详细的 ` AVM `上手参考本文[《第6节：  AVM 上手》](#s6)
 
 本地调试和预览不需要提交代码到云端，可以直接同步代码和预览。当需要云编译成应用安装包的时候，需要提交代码到云端。
+
+### 5.1 提交代码
+
+提交代码前需要确认是否保存。然后右键点击项目根目录，选择“提交到云端”。
+
+![image.png](./image/@readme/cpW21XJOq9Vu8rD.png)
+
+将会出现修改文件列表和输入提交注释的界面。输入注释（也可以使用自己喜欢的代码管理工具进行提交）
+
+![image.png](./image/@readme/BXKMT4aJkuI9Zi2.png)
 
 调试编写完成以后，提交代码到云端。右键项目根目录，并选择“云编译”，进入打包编译页面，进行一些简单的设置，即可发行你的应用了。
 
