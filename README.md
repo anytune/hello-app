@@ -34,13 +34,17 @@
 
 ~~~html
 ┌─css/                  css 样式目录
-├─components/           公共组件目录
+├─components/           [3.x 版本] 公共组件目录
+├─html/                 [2.x 版本] html 页面目录
+├─icon/                 应用图标(本地调试用)
 ├─image/                图片资源目录
-├─pages/                AVM 页面目录 
+├─launch/               启动图片(本地调试用)
+├─pages/                [3.x 版本] AVM.js 页面目录 
 │  ├─main
-│  │  └─main.stml       main 页面代码
-├─script/               JavaScript 脚本目录
+│  │  └─main.stml       main.stml 页面代码
 ├─res/                  原生资源和二进制目录
+├─script/               JavaScript 脚本目录
+├─wgt/                  子wgt目录
 └─config.xml            应用配置文件
 ~~~
 > ` config.xml ` 是应用配置文件，其中定义了应用的基本信息，完整说明请参考：[《config.xml应用配置说明》](https://docs.apicloud.com/Dev-Guide/app-config-manual?uzchannel=30)。
