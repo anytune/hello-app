@@ -37,7 +37,7 @@
    开发完的小程序代码，可百分百编译为同等功能的 App，相当于开发一个小程序，“白送”一个  ` App `。
  
 -  **` App Clip `** ：即  ` iOS `  轻 ` App `，是苹果公司在  ` iOS ` 14  最新推出的无需下载、即搜即用的全功能 ` App `，属于主 ` App ` 的一部分，可以理解为“苹果小程序”。
-详细的场景介绍和技术细节请参考：https://docs.apicloud.com/apicloud3/?uzchannel=30#/overview/
+详细的场景介绍和技术细节请参考：https://docs.apicloud.com/apicloud3/?uzchannel=30
    
 #### 3.1.2 关于 ` 使用AVM.JS ` 的说明
 在兼容和继承  ` APICloud `  所有 ` API ` 、模块、技术栈以及用户体验的基础上，我们定义了一套新的代码编写标准（ ` DSL ` ）：
