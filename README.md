@@ -6,6 +6,10 @@
 - [github] https://github.com/apicloudcom/hello-app
 
 - [gitee镜像] https://gitee.com/YangYongAn/hello-app  
+
+### 更多项目模板请访问 [mx-app 应用模板合集](https://github.com/apicloudcom/mx-app-templates) :
+https://github.com/apicloudcom/mx-app-templates
+
 ## 1 多端技术简介
 ` APICloud ` 多端技术提供一套代码同时开发原生 ` Android `  &  ` iOS ` 平台的  ` APP  ` 以及小程序的能力。多端技术基于 ` avm.js ` 语法进行代码编写，通过 ` APICloud Studio3 ` 或云编译生成  ` APP  ` 以及小程序代码。
 
