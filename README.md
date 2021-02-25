@@ -1,11 +1,8 @@
 #  APICloud多端开发快速上手教程
 
 ## 0 代码仓库
-> 如果github图文异常请使用 gitee 镜像仓库
 
 - [github] https://github.com/apicloudcom/hello-app
-
-- [gitee镜像] https://gitee.com/YangYongAn/hello-app  
 
 ### 更多项目模板请访问 [mx-app 应用模板合集](https://github.com/apicloudcom/mx-app-templates) :
 https://github.com/apicloudcom/mx-app-templates
