@@ -1,7 +1,7 @@
 #  APICloud多端开发快速上手教程
 
 ## 0 代码仓库
-> 如果github图文异常请使用gitee镜像仓库
+> 如果github图文异常请使用 gitee 镜像仓库
 
 - [github] https://github.com/apicloudcom/hello-app
 
